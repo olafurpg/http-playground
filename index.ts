@@ -1,36 +1,25 @@
 import OpenAI from "openai";
 
 import { config } from "dotenv";
-import  fetch  from 'node-fetch'
+import fetch from "node-fetch";
 config();
 
 const openai = new OpenAI({
-  baseURL: "https://sourcegraph.test:3443/api/openai/v1",
-  apiKey: process.env.SRC_ACCESS_TOKEN,
-  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-  fetch: ((url: any, options: any) => {
-    return fetch(url, {
-      ...options,
-      // Need to reject unauthorized to test local sourcegraph instance.
-      tls: {rejectUnauthorized: false}
-    });
-  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-  }) as any,
+  baseURL: "https://api.deepseek.com/beta",
+  apiKey: process.env.DEEPSEEK_API_KEY,
+  // // biome-ignore lint/suspicious/noExplicitAny: <explanation>
+  // fetch: (url: any, options: any) =>
+  //   fetch(url, {
+  //     ...options,
+  //     // Need to reject unauthorized to test local sourcegraph instance.
+  //     tls: { rejectUnauthorized: false },
+  //   }),
 });
 
-const response = await openai.chat.completions.create({
-  model: "anthropic::unknown::claude-3-sonnet-20240229",
-  messages: [
-    {
-      role: "user",
-      content: [
-        {
-          type: "text",
-          text: 'Respond with "yes" and nothing else',
-        },
-      ],
-    },
-  ],
+const response = await openai.completions.create({
+  model: "deepseek-coder",
+  prompt:
+    "<repo_name>github.com/sourcegraph/cody\n#vscode/src/extension.common.ts\nimport type {\n    CompletionLogger,\n    CompletionsClientConfig,\n    Configuration,\n    ConfigurationWithAccessToken,\n    SourcegraphCompletionsClient,\n} from '@sourcegraph/cody-shared'\nimport type { startTokenReceiver } from './auth/token-receiver'\n\nimport type { BfgRetriever } from './completions/context/retrievers/bfg/bfg-retriever'\nimport { onActivationDevelopmentHelpers } from './dev/helpers'\n\nimport './editor/displayPathEnvInfo' // import for side effects\n\nimport type { createController } from '@openctx/vscode-lib'\nimport type { CommandsProvider } from './commands/services/provider'\nimport { ExtensionApi } from './extension-api'\nimport type { ExtensionClient } from './extension-client'\nimport type { LocalEmbeddingsConfig, LocalEmbeddingsController } from './local-context/local-embeddings'\nimport type { SymfRunner } from './local-context/symf'\nimport { start } from './main'\nimport type {\n    OpenTelemetryService,\n    OpenTelemetryServiceConfig,\n} from './services/open-telemetry/OpenTelemetryService.node'\nimport { type SentryService, captureException } from './services/sentry/sentry'\n\ntype Constructor<T extends new (...args: any) => any> = T extends new (\n    ...args: infer A\n) => infer R\n    ? (...args: A) => R\n    : never\n\nexport interface PlatformContext {\n    createOpenCtxController?: typeof createController\n    createStorage?: () => Promise<vscode.Memento>\n    createCommandsProvider?: Constructor<typeof CommandsProvider>\n    createLocalEmbeddingsController?: (\n        config: LocalEmbeddingsConfig\n    ) => Promise<LocalEmbeddingsController>\n    createSymfRunner?: Constructor<typeof SymfRunner>\n    createBfgRetriever?: () => BfgRetriever\n    createCompletionsClient: (\n        config: CompletionsClientConfig,\n        logger?: CompletionLogger\n    ) => SourcegraphCompletionsClient\n    createSentryService?: (config: Pick<ConfigurationWithAccessToken, 'serverEndpoint'>) => SentryService\n    createOpenTelemetryService?: (config: OpenTelemetryServiceConfig) => OpenTelemetryService\n    startTokenReceiver?: typeof startTokenReceiver\n    onConfigurationChange?: (configuration: Configuration) => void\n\n#vscode/src/external-services.ts\n<｜fim▁begin｜>import type * as vscode from 'vscode'\n\nimport {\n    ChatClient,\n    type CodeCompletionsClient,\n    type ConfigurationWithAccessToken,\n    type Guardrails,\n    type GuardrailsClientConfig,\n    type SourcegraphCompletionsClient,\n    SourcegraphGuardrailsClient,\n    featureFlagProvider,\n    graphqlClient,\n    isEnterpriseUser,\n    isError,\n} from '@sourcegraph/cody-shared'\n\nimport { ContextAPIClient } from './chat/context/contextAPIClient'\nimport { createClient as createCodeCompletionsClient } from './completions/client'\nimport type { ConfigWatcher } from './configwatcher'\nimport type { PlatformContext } from './extension.common'\nimport type { LocalEmbeddingsConfig, LocalEmbeddingsController } from './local-context/local-embeddings'\nimport type { SymfRunner } from './local-context/symf'\nimport { logDebug, logger } from './log'\nimport type { AuthProvider } from './services/AuthProvider'\n\ninterface ExternalServices {\n    chatClient: ChatClient\n    completionsClient: SourcegraphCompletionsClient\n    codeCompletionsClient: CodeCompletionsClient\n    guardrails: Guardrails\n    localEmbeddings: LocalEmbeddingsController | undefined\n    symfRunner: SymfRunner | undefined\n    contextAPIClient: ContextAPIClient | undefined\n\n    /** Update configuration for all of the services in this interface. */\n    onConfigurationChange: (newConfig: ExternalServicesConfiguration) => void\n}\n\ntype ExternalServicesConfiguration = Pick<\n    ConfigurationWithAccessToken,\n    | 'serverEndpoint'\n    | 'codebase'\n    | 'useContext'\n    | 'customHeaders'\n    | 'accessToken'\n    | 'debugVerbose'\n    | 'experimentalTracing'\n> &\n    LocalEmbeddingsConfig &\n    GuardrailsClientConfig\n\nexport async function configureExternalServices(\n    context: vscode.ExtensionContext,\n    config: ConfigWatcher<ExternalServicesConfiguration>,\n    platform: Pick<\n        PlatformContext,\n        | 'createLocalEmbeddingsController'\n        | 'createCompletionsClient'\n        | 'createSentryService'\n        | 'createOpenTelemetryService'\n        | 'createSymfRunner'\n    >,\n    authProvider: AuthProvider\n): Promise<ExternalServices> {\n    const initialConfig = config.get()\n    const sentryService = platform.createSentryService?.(initialConfig)\n    const openTelemetryService = platform.createOpenTelemetryService?.(initialConfig)\n    const completionsClient = platform.createCompletionsClient(initialConfig, logger)\n    const codeCompletionsClient = createCodeCompletionsClient(initialConfig, logger)\n\n    const symfRunner = isEnterpriseUser(authProvider.getAuthStatus())\n        ? undefined // <｜fim▁hole｜>\n        : platform.createSymfRunner?.(context, completionsClient, authProvider)\n\n    if (initialConfig.codebase && isError(await graphqlClient.getRepoId(initialConfig.codebase))) {\n        logDebug(\n            'external-services:configureExternalServices',\n            `Cody could not find the '${initialConfig.codebase}' repository on your Sourcegraph instance.\\nPlease check that the repository exists. You can override the repository with the \"cody.codebase\" setting.`\n        )\n    }\n\n    const localEmbeddings = await platform.createLocalEmbeddingsController?.(initialConfig)\n\n    const chatClient = new ChatClient(completionsClient, () => authProvider.getAuthStatus())\n<｜fim▁end｜>",
   temperature: 1,
   max_tokens: 256,
   top_p: 1,
