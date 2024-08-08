@@ -1,0 +1,220 @@
+1692.812208	8602	 writer = w || new pb_1.BinaryWriter()	
+537.786625	6666	 writer = w || new pb_1.BinaryWriter()	
+678.8337499999998	4782	 writer = w || new pb_1.BinaryWriter()	
+447.8997919999997	7175	 writer = w || new pb_1.BinaryWriter()	
+512.2744579999999	6257	 writer = w || new pb_1.BinaryWriter()	
+512.3628340000005	4688	 writer = w || new pb_1.BinaryWriter()	
+714.0345829999997	4302	 writer = w || new pb_1.BinaryWriter()	
+508.11445899999944	9404	 writer = w || new pb_1.BinaryWriter()	
+435.0767500000002	10361	 writer = w || new pb_1.BinaryWriter()	
+485.1819999999998	8163	 writer = w || new pb_1.BinaryWriter()	
+466.39904099999967	6912	 writer = w || new pb_1.BinaryWriter()	
+416.3630409999996	3387	 writer = w || new pb_1.BinaryWriter()	
+447.2453340000002	3670	 writer = w || new pb_1.BinaryWriter()	
+820.3780000000006	33264	 writer = w || new pb_1.BinaryWriter()	
+614.8306250000005	10758	 writer = w || new pb_1.BinaryWriter()	
+509.97208300000057	4235	 writer = w || new pb_1.BinaryWriter()	
+409.97450000000026	2805	 writer = w || new pb_1.BinaryWriter()	
+410.4736670000002	3265	 writer = w || new pb_1.BinaryWriter()	
+376.18512499999997	3067	 writer = w || new pb_1.BinaryWriter()	
+709.0057079999988	2942	 writer = w || new pb_1.BinaryWriter()	
+691.896084	3102	 writer = w || new pb_1.BinaryWriter()	
+363.78704199999993	3071	 writer = w || new pb_1.BinaryWriter()	
+371.57337499999994	3890	 writer = w || new pb_1.BinaryWriter()	
+341.1209590000017	4128	 writer = w || new pb_1.BinaryWriter()	
+767.8279999999995	4245	 writer = w || new pb_1.BinaryWriter()	
+362.0371249999989	4074	 writer = w || new pb_1.BinaryWriter()	
+405.7922499999986	3137	 writer = w || new pb_1.BinaryWriter()	
+439.915167000001	2676	 writer = w || new pb_1.BinaryWriter()	
+366.4657079999997	3837	 writer = w || new pb_1.BinaryWriter()	
+420.3064579999991	4654	 writer = w || new pb_1.BinaryWriter()	
+653.8318750000001	33264	 writer = w || new pb_1.BinaryWriter()	
+463.484417	10713	mocks_temp.go	defer f.mutex.Unlock()	
+299.55574999999993	3979	mocks_temp.go	defer f.mutex.Unlock()	
+256.88433299999997	3417	mocks_temp.go	defer f.mutex.Unlock()	
+241.48849999999993	3700	mocks_temp.go	defer f.mutex.Unlock()	
+296.69779199999994	3899	mocks_temp.go	defer f.mutex.Unlock()	
+307.9410419999999	3631	mocks_temp.go	defer f.mutex.Unlock()	
+271.38662499999987	3971	mocks_temp.go	defer f.mutex.Unlock()	
+314.2315840000001	4111	mocks_temp.go	defer f.mutex.Unlock()	
+319.87083299999995	4007	mocks_temp.go	defer f.mutex.Unlock()	
+413.8029160000001	13346	mocks_temp.go	defer f.mutex.Unlock()	
+4309.331792	10713	mocks_temp.go	undefined	
+4303.351290999999	3979	mocks_temp.go	undefined	
+450.086	10713	mocks_temp.go	defer f.mutex.Unlock()	
+713.012375	3979	mocks_temp.go	defer f.mutex.Unlock()	
+321.49745899999994	3417	mocks_temp.go	defer f.mutex.Unlock()	
+336.18837499999995	3700	mocks_temp.go	defer f.mutex.Unlock()	
+353.0727499999998	3899	mocks_temp.go	defer f.mutex.Unlock()	
+351.50912500000004	3631	mocks_temp.go	defer f.mutex.Unlock()	
+322.56741699999975	3971	mocks_temp.go	defer f.mutex.Unlock()	
+470.36850000000004	4111	mocks_temp.go	defer f.mutex.Unlock()	
+303.4175839999998	4007	mocks_temp.go	defer f.mutex.Unlock()	
+554.6657089999999	13346	mocks_temp.go	defer f.mutex.Unlock()	
+510.44599999999997	2929	mocks_temp.go	defer f.mutex.Unlock()	
+584.8668329999999	1245	mocks_temp.go	defer f.mutex.Unlock()	
+419.489417	1105	mocks_temp.go	defer f.mutex.Unlock()	
+386.65583300000003	1175	mocks_temp.go	defer f.mutex.Unlock()	
+391.20795899999985	1225	mocks_temp.go	defer f.mutex.Unlock()	
+371.78883300000007	1158	mocks_temp.go	defer f.mutex.Unlock()	
+362.4659160000001	1243	mocks_temp.go	defer f.mutex.Unlock()	
+380.7734999999998	1278	mocks_temp.go	defer f.mutex.Unlock()	
+1118.11175	1252	mocks_temp.go	defer f.mutex.Unlock()	
+756.9046669999998	3587	mocks_temp.go	defer f.mutex.Unlock()	
+371.305541	2929	mocks_temp.go		
+280.21920800000004	1246	mocks_temp.go		
+243.36391700000001	1105	mocks_temp.go		
+298.98633399999994	1176	mocks_temp.go		
+196.79158299999995	1226	mocks_temp.go		
+237.88324999999986	1159	mocks_temp.go		
+235.4453329999999	1244	mocks_temp.go		
+241.68908299999998	1279	mocks_temp.go		
+261.3163749999999	1253	mocks_temp.go		
+338.37095899999986	3588	mocks_temp.go		
+447.25262499999997	2401	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+260.553917	1917	scip.ts		
+261.048583	1446	scip.ts	 writer 	
+255.73083399999996	2044	scip.ts		
+210.8336670000001	1815	scip.ts		
+320.38924999999995	1422	scip.ts	 writer 	
+238.66758299999992	1326	scip.ts	 writer 	
+282.67375000000015	2601	scip.ts		
+327.4782500000001	2841	scip.ts		
+318.5590830000001	2291	scip.ts		
+4031.233625	2401	scip.ts	 writer = w || new pb_1.BinaryWriter()
+            if (this.has_metadata)
+                writer.writeMessage(1, this.metadata, () => this.metadata.serialize(writer))
+            if (this.documents.length)
+                writer.writeRepeatedMessage(2, this.documents, (item: Document) =>
+                    item.serialize(writer)
+                )
+            if (this.external_symbols.length)
+                writer.writeRepeatedMessage(3, this.external_symbols, (item: SymbolInformation) =>
+                    item.serialize(writer)
+                )
+            if (!w) return writer.getResultBuffer()
+        }
+        static deserialize(bytes: Uint8Array | pb_1.BinaryReader): Index {
+            const reader = bytes instanceof pb_1.BinaryReader ? bytes : new	
+195.79766699999936	1917	scip.ts		
+221.35191599999962	1446	scip.ts		
+354.1705000000002	2044	scip.ts	 writer 	
+235.39608399999997	1815	scip.ts		
+262.2717080000002	1422	scip.ts	 writer 	
+234.16612500000065	1326	scip.ts	 writer 	
+4254.3885	2401	scip.ts	 writer = w || new pb_1.BinaryWriter()
+            if (this.has_metadata)
+                writer.writeMessage(1, this.metadata, () => this.metadata.serialize(writer))
+            if (this.documents.length)
+                writer.writeRepeatedMessage(2, this.documents, (item: Document) =>
+                    item.serialize(writer)
+                )
+            if (this.external_symbols.length)
+                writer.writeRepeatedMessage(3, this.external_symbols, (item: SymbolInformation) =>
+                    item.serialize(writer)
+                )
+            if (!w) return writer.getResultBuffer()
+        }
+        static deserialize(bytes: Uint8Array | pb_1.BinaryReader): Index {
+            const reader = bytes instanceof pb_1.BinaryReader ? bytes : new	
+304.24512500000037	4069	scip.ts	 writer 	
+317.766834	5267	scip.ts	 writer 	
+451.49924999999985	7063	scip.ts	 writer 	
+5012.965999999999	8629	scip.ts	 writer = w || new pb_1.BinaryWriter()
+            if (this.scheme.length) writer.writeString(1, this.scheme)
+            if (this.has_package)
+                writer.writeMessage(2, this.package, () => this.package.serialize(writer))
+            if (this.descriptors.length)
+                writer.writeRepeatedMessage(3, this.descriptors, (item: Descriptor) =>
+                    item.serialize(writer)
+                )
+            if (!w) return writer.getResultBuffer()
+        }
+        static deserialize(bytes: Uint8Array | pb_1.BinaryReader): Symbol {
+            const reader = bytes instanceof pb_1.BinaryReader ? bytes : new pb_1.BinaryReader(bytes),
+                message = new Symbol()
+            while (reader.nextField()) {
+               	
+5142.247333000001	9803	scip.ts	 writer = w || new pb_1.BinaryWriter()
+            if (this.manager.length) writer.writeString(1, this.manager)
+            if (this.name.length) writer.writeString(2, this.name)
+            if (this.version.length) writer.writeString(3, this.version)
+            if (!w) return writer.getResultBuffer()
+        }
+        static deserialize(bytes: Uint8Array | pb_1.BinaryReader): Package {
+            const reader = bytes instanceof pb_1.BinaryReader ? bytes : new pb_1.BinaryReader(bytes),
+                message = new Package()
+            while (reader.nextField()) {
+                if (reader.isEndGroup()) break
+                switch (reader.getFieldNumber()) {
+                    case 1:
+                        message.manager = reader.readString()	
+501.35954100000004	2401	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+309.2610830000001	4069	scip.ts	 writer 	
+329.32925	5267	scip.ts	 writer 	
+378.381584	7063	scip.ts	 writer 	
+560.695958	2401	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+389.024584	4069	scip.ts	 writer 	
+512.216625	2401	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+353.8837500000001	4069	scip.ts	 writer 	
+429.34787500000004	5267	scip.ts	 writer 	
+926.588417	2401	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+302.3956249999999	4069	scip.ts	 writer 	
+403.4854579999999	5267	scip.ts	 writer 	
+452.157167	2401	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+327.52045899999996	4069	scip.ts	 writer 	
+466.903917	5267	scip.ts	 writer 	
+381.54416600000013	7063	scip.ts	 writer 	
+516.686125	8629	scip.ts	 writer 	
+725.8267089999999	9803	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+841.153667	10880	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+567.449666	2401	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+381.078125	4069	scip.ts	 writer 	
+334.1408339999999	5267	scip.ts	 writer 	
+395.10087499999986	7063	scip.ts	 writer 	
+767.3719170000002	8629	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+791.468417	9803	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+863.9707919999996	10880	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+894.4538750000002	13233	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+1053.5404159999998	15826	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+734.0938340000002	17868	scip.ts	 writer 	
+374.12841699999996	2929	mocks_temp.go		
+303.328333	3927	mocks_temp.go		
+342.80783299999996	4783	mocks_temp.go		
+419.91954199999986	5711	mocks_temp.go		
+778.7352920000001	6688	mocks_temp.go	otry := make([]AccessRequestStoreGetByIDFuncCall, len(f.history))	
+516.9404159999999	7598	mocks_temp.go		
+419.72237499999983	8594	mocks_temp.go		
+531.4072500000002	9624	mocks_temp.go		
+506.768458	10628	mocks_temp.go	ory	
+725.3991249999999	13967	mocks_temp.go		
+706.9418329999999	14994	mocks_temp.go		
+814.6619170000004	16164	mocks_temp.go		
+1294.8528750000005	17186	mocks_temp.go	 := make([]AccessTokenStoreDeleteByIDFuncCall, len(f.history))	
+814.114375000001	18088	mocks_temp.go		
+892.5356250000004	19030	mocks_temp.go		
+1558.0232080000005	20011	mocks_temp.go	 := make([]AccessTokenStoreGetByTokenFuncCall, len(f.history))	
+1016.8802500000002	21056	mocks_temp.go		
+1015.5872909999998	22002	mocks_temp.go		
+1076.2744999999995	22856	mocks_temp.go		
+1240.0726249999989	23842	mocks_temp.go		
+517.2967500000001	2401	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+350.75987499999997	4069	scip.ts	 writer 	
+539.147834	5267	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+449.9307500000002	7063	scip.ts	 writer 	
+497.41166699999985	8629	scip.ts	 writer 	
+731.9990830000002	9803	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+775.3903750000004	10880	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+912.131167	13233	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+1023.3983749999998	15826	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+832.691084	17868	scip.ts	 writer 	
+1191.4634160000005	19598	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+941.7095410000011	20447	scip.ts	 writer 	
+1286.253417	21367	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+1197.0167499999989	29685	scip.ts		
+1799.2871669999986	32376	scip.ts	 writer = w || new pb_1.BinaryWriter()	
+228.1989590000012	33437	scip.ts	undefined	
+231.4052499999998	34140	scip.ts	undefined	
+219.69570799999929	34958	scip.ts	undefined	
+270.3384590000005	35727	scip.ts	undefined	
+268.15716600000087	36465	scip.ts	undefined	
